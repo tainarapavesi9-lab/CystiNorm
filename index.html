@@ -118,7 +118,7 @@
 
     <!-- PERFORMANCE EXTRA -->
     <meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#CFB79B">
 
     <style>
         body { 
@@ -137,10 +137,35 @@
         .modal-open { overflow: hidden; }
         .brand-bg { background-color: #B83654; } 
         .brand-text { color: #B83654; }
-        .cta-button { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: linear-gradient(135deg, #B83654 0%, #922b43 100%); position: relative; overflow: hidden; }
+        
+        .cta-button { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            background: linear-gradient(135deg, #B83654 0%, #922b43 100%); 
+            position: relative; 
+            overflow: hidden; 
+        }
         .cta-button:hover { transform: translateY(-2px) scale(1.01); box-shadow: 0 15px 25px -5px rgba(184, 54, 84, 0.4); }
+        
         .product-shadow { filter: drop-shadow(0 30px 50px rgba(45, 36, 30, 0.25)); }
-        .offer-badge { background: white; color: #452b1e; border: 1px solid rgba(181, 145, 121, 0.2); }
+        
+        .offer-badge { background: rgba(255, 255, 255, 0.4); color: #2D241E; border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(4px); }
+
+        /* Integrated CTA Card Style */
+        .integrated-card {
+            background: rgba(255, 252, 245, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(181, 145, 121, 0.4);
+            box-shadow: 0 25px 50px -12px rgba(45, 36, 30, 0.15);
+        }
+
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 3s infinite ease-in-out;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -158,16 +183,16 @@
             <div class="hero-glow"></div>
             
             <div class="container mx-auto px-6 py-12 lg:py-20 relative z-10">
-                <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     
                     <!-- Left Column: Product Image -->
                     <div class="reveal flex flex-col items-center justify-center lg:order-1 order-2">
                         <div class="relative group">
                             <!-- Background Decoration -->
-                            <div class="absolute -inset-16 bg-white/20 rounded-full blur-[80px] z-0 opacity-40"></div>
+                            <div class="absolute -inset-16 bg-white/10 rounded-full blur-[100px] z-0 opacity-30"></div>
                             
-                            <!-- Circular Badge Removed per request -->
-                            <img src="images/cystonorm-2-md.png" alt="CYSTINORM Bottle" class="relative z-10 w-full max-w-[340px] lg:max-w-[400px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
+                            <!-- Circular Badge Removed as requested -->
+                            <img src="images/cystonorm-2-md.png" alt="CYSTINORM Bottle" class="relative z-10 w-full max-w-[340px] lg:max-w-[420px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
                         </div>
                     </div>
 
@@ -181,47 +206,68 @@
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                             </div>
-                            <span class="text-[11px] font-bold uppercase tracking-[0.1em] text-slate-600" data-i18n="badge_offer">SPECIAL OFFER: ONLY 29€ TODAY</span>
+                            <span class="text-[11px] font-bold uppercase tracking-[0.1em]" data-i18n="badge_offer">SPECIAL OFFER: ONLY 29€ TODAY</span>
                         </div>
 
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-[1.1] tracking-tight text-[#2D241E]">
                             <span data-i18n="h1_full">Support Your Urinary Comfort Naturally</span>
                         </h1>
                         
-                        <p class="text-lg md:text-xl mb-8 text-[#452b1e] leading-relaxed max-w-xl mx-auto lg:mx-0" data-i18n="hero_desc">
+                        <p class="text-lg md:text-xl mb-10 text-[#452b1e] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium opacity-90" data-i18n="hero_desc">
                             CYSTINORM is a carefully crafted natural formula designed to help support bladder health, promote urinary tract comfort, and fit easily into your daily wellness routine.
                         </p>
                         
-                        <!-- CTA Card -->
-                        <div class="w-full max-w-md bg-white rounded-[32px] shadow-2xl border border-white/50 mx-auto lg:mx-0 p-8">
+                        <!-- CTA Card - NEW INTEGRATED STYLE -->
+                        <div class="w-full max-w-md integrated-card rounded-[40px] mx-auto lg:mx-0 p-8 lg:p-10 border border-white/20">
                             <div class="text-center">
-                                <div class="mb-6">
-                                    <span class="text-slate-400 font-bold uppercase text-[9px] tracking-widest block mb-1" data-i18n="price_limited">LIMITED TIME PRICE</span>
-                                    <div class="flex items-center justify-center gap-3">
-                                        <span class="text-slate-300 line-through text-lg font-medium">58€</span>
-                                        <span class="text-[#B83654] text-5xl font-black">29€</span>
+                                <div class="mb-8">
+                                    <span class="text-[#2D241E]/40 font-extrabold uppercase text-[10px] tracking-[0.2em] block mb-2" data-i18n="price_limited">LIMITED TIME PRICE</span>
+                                    <div class="flex items-baseline justify-center gap-4">
+                                        <span class="text-[#2D241E]/30 line-through text-2xl font-bold">58€</span>
+                                        <span class="text-[#B83654] text-6xl font-black tracking-tighter">29€</span>
                                     </div>
                                 </div>
 
-                                <p class="font-bold text-[#B59179] uppercase tracking-[0.1em] text-[10px] mb-4" data-i18n="select_country">SELECT YOUR COUNTRY:</p>
+                                <div class="w-full h-px bg-[#2D241E]/10 mb-8"></div>
+
+                                <p class="font-bold text-[#2D241E]/60 uppercase tracking-[0.15em] text-[11px] mb-6" data-i18n="select_country">CHOOSE YOUR DESTINATION:</p>
                                 
-                                <div class="space-y-3">
-                                    <a href="https://myblogshop.top/r/e6YF6PYM/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-6 py-4 text-white rounded-xl font-bold text-base group w-full">
+                                <div class="grid grid-cols-1 gap-4">
+                                    <a href="https://myblogshop.top/r/e6YF6PYM/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-8 py-5 text-white rounded-[20px] font-bold text-lg group w-full">
                                         <span data-i18n="country_de">Germany</span>
-                                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                        <div class="bg-white/20 rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+                                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                                        </div>
                                     </a>
-                                    <a href="https://myblogshop.top/r/OzEU6dnE/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-6 py-4 text-white rounded-xl font-bold text-base group w-full">
+                                    <a href="https://myblogshop.top/r/OzEU6dnE/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-8 py-5 text-white rounded-[20px] font-bold text-lg group w-full">
                                         <span data-i18n="country_it">Italy</span>
-                                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                        <div class="bg-white/20 rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+                                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                                        </div>
                                     </a>
-                                    <a href="https://myblogshop.top/r/VrxFDJqP/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-6 py-4 text-white rounded-xl font-bold text-base group w-full">
+                                    <a href="https://myblogshop.top/r/VrxFDJqP/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-8 py-5 text-white rounded-[20px] font-bold text-lg group w-full">
                                         <span data-i18n="country_ch">Switzerland</span>
-                                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                        <div class="bg-white/20 rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+                                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                                        </div>
                                     </a>
-                                    <a href="https://myblogshop.top/r/2NyTmoVN/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-6 py-4 text-white rounded-xl font-bold text-base group w-full">
+                                    <a href="https://myblogshop.top/r/2NyTmoVN/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-between px-8 py-5 text-white rounded-[20px] font-bold text-lg group w-full">
                                         <span data-i18n="country_es">Spain</span>
-                                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                        <div class="bg-white/20 rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+                                            <i data-feather="chevron-right" class="w-5 h-5"></i>
+                                        </div>
                                     </a>
+                                </div>
+
+                                <div class="mt-8 flex items-center justify-center gap-6 text-[#2D241E]/50">
+                                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider">
+                                        <i data-feather="truck" class="w-4 h-4"></i>
+                                        <span data-i18n="free_delivery">Free Shipping</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider">
+                                        <i data-feather="shield" class="w-4 h-4"></i>
+                                        <span data-i18n="guarantee_text">60 Days Warranty</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -231,13 +277,13 @@
         </section>
 
         <!-- Trust Bar -->
-        <section class="border-y border-black/5 py-8 opacity-60">
+        <section class="border-y border-black/5 py-10 opacity-50 bg-[#B59179]/5">
             <div class="container mx-auto px-6">
-                <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center text-[#2D241E] font-bold text-xs tracking-widest italic">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center text-[#2D241E] font-extrabold text-[10px] tracking-[0.25em]">
                     <span data-i18n="trust_1">PHARMA-GRADE</span>
                     <span data-i18n="trust_2">CLINICALLY TESTED</span>
                     <span data-i18n="trust_3">GMP-CERTIFIED</span>
-                    <span data-i18n="trust_4">EU STANDARD</span>
+                    <span data-i18n="trust_4">EU QUALITY STANDARDS</span>
                 </div>
             </div>
         </section>
@@ -248,38 +294,38 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 text-center md:text-left">
                 <div>
-                    <span class="text-xl font-black text-white block mb-6">CYSTINORM</span>
-                    <p class="text-sm opacity-60" data-i18n="footer_desc">
+                    <span class="text-xl font-black text-white block mb-6 tracking-tight">CYSTINORM</span>
+                    <p class="text-sm opacity-50 leading-relaxed" data-i18n="footer_desc">
                         Pioneering natural solutions for urinary health. Dedicated to providing premium, safe, and effective supplements for a better quality of life.
                     </p>
                 </div>
                 <div>
                     <h5 class="text-white font-bold text-xs tracking-widest mb-6" data-i18n="footer_title_company">COMPANY INFO</h5>
-                    <div class="space-y-2 text-sm">
+                    <div class="space-y-3 text-sm">
                         <p class="font-bold text-slate-200">Health-Tech Solutions GmbH</p>
-                        <p>Ludwig-Wagner-Straße 22</p>
-                        <p>69168 Wiesloch, Germany</p>
-                        <p>service@cystinorm-health.com</p>
+                        <p class="opacity-60">Ludwig-Wagner-Straße 22</p>
+                        <p class="opacity-60">69168 Wiesloch, Germany</p>
+                        <p class="text-[#B83654] font-medium">service@cystinorm-health.com</p>
                     </div>
                 </div>
                 <div>
                     <h5 class="text-white font-bold text-xs tracking-widest mb-6" data-i18n="footer_title_policies">POLICIES</h5>
                     <div class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest">
-                        <button onclick="openModal('privacy')" class="hover:text-white text-left transition-colors" data-i18n="link_privacy">Privacy Policy</button>
-                        <button onclick="openModal('terms')" class="hover:text-white text-left transition-colors" data-i18n="link_terms">Terms & Conditions</button>
+                        <button onclick="openModal('privacy')" class="hover:text-white text-left transition-colors opacity-60 hover:opacity-100" data-i18n="link_privacy">Privacy Policy</button>
+                        <button onclick="openModal('terms')" class="hover:text-white text-left transition-colors opacity-60 hover:opacity-100" data-i18n="link_terms">Terms & Conditions</button>
                     </div>
                 </div>
                 <div>
                     <h5 class="text-white font-bold text-xs tracking-widest mb-6" data-i18n="footer_title_help">HELP & SUPPORT</h5>
                     <div class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest">
-                        <button onclick="openModal('shipping')" class="hover:text-white text-left transition-colors" data-i18n="link_shipping">Shipping Info</button>
-                        <button onclick="openModal('returns')" class="hover:text-white text-left transition-colors" data-i18n="link_returns">Returns Policy</button>
-                        <button onclick="openModal('contact')" class="hover:text-white text-left transition-colors" data-i18n="link_contact">Contact Us</button>
+                        <button onclick="openModal('shipping')" class="hover:text-white text-left transition-colors opacity-60 hover:opacity-100" data-i18n="link_shipping">Shipping Info</button>
+                        <button onclick="openModal('returns')" class="hover:text-white text-left transition-colors opacity-60 hover:opacity-100" data-i18n="link_returns">Returns Policy</button>
+                        <button onclick="openModal('contact')" class="hover:text-white text-left transition-colors opacity-60 hover:opacity-100" data-i18n="link_contact">Contact Us</button>
                     </div>
                 </div>
             </div>
 
-            <div class="max-w-4xl mx-auto text-[10px] leading-relaxed opacity-40 space-y-4 border-t border-white/5 pt-10 text-center">
+            <div class="max-w-4xl mx-auto text-[10px] leading-relaxed opacity-30 space-y-4 border-t border-white/5 pt-10 text-center">
                 <p class="font-bold text-slate-200 uppercase tracking-widest" data-i18n="footer_authorized_dist">AUTHORIZED DISTRIBUTOR</p>
                 <p class="font-bold" data-i18n="disclaimer_title">IMPORTANT DISCLAIMER:</p>
                 <p data-i18n="disclaimer_text_1">This site is not part of the Google™ or Meta Inc. website.</p>
@@ -294,7 +340,7 @@
         <div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative w-full max-w-3xl bg-white rounded-[32px] shadow-2xl flex flex-col overflow-hidden">
+                <div class="relative w-full max-w-3xl bg-white rounded-[40px] shadow-2xl flex flex-col overflow-hidden">
                     <div class="px-8 py-6 border-b border-slate-50 flex justify-between items-center">
                         <h3 class="font-black brand-text uppercase tracking-widest text-sm" id="modal-title">Info</h3>
                         <button onclick="closeModal()" class="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-400">
@@ -318,7 +364,7 @@
                 h1_full: "Support Your Urinary Comfort Naturally",
                 hero_desc: "CYSTINORM is a carefully crafted natural formula designed to help support bladder health, promote urinary tract comfort, and fit easily into your daily wellness routine.",
                 price_limited: "LIMITED TIME PRICE",
-                select_country: "SELECT YOUR COUNTRY:",
+                select_country: "CHOOSE YOUR DESTINATION:",
                 country_de: "Germany",
                 country_it: "Italy",
                 country_ch: "Switzerland",
@@ -326,7 +372,7 @@
                 trust_1: "PHARMA-GRADE",
                 trust_2: "CLINICALLY TESTED",
                 trust_3: "GMP-CERTIFIED",
-                trust_4: "EU STANDARD",
+                trust_4: "EU QUALITY STANDARDS",
                 footer_desc: "Pioneering natural solutions for urinary health. Dedicated to providing premium, safe, and effective supplements.",
                 footer_title_company: "COMPANY INFO",
                 footer_title_policies: "POLICIES",
@@ -341,15 +387,17 @@
                 disclaimer_text_2: "CYSTINORM is a dietary supplement. Statements not evaluated by medical authorities. Not intended to diagnose, treat, cure, or prevent any disease.",
                 footer_rights: "All rights reserved.",
                 modal_close_btn: "Close",
-                footer_authorized_dist: "AUTHORIZED DISTRIBUTOR"
+                footer_authorized_dist: "AUTHORIZED DISTRIBUTOR",
+                free_delivery: "Free Shipping",
+                guarantee_text: "60 Days Warranty"
             },
             es: {
                 seo_title: "Cystinorm™ | Apoyo Natural para Tracto Urinario y Vejiga",
                 badge_offer: "OFERTA ESPECIAL: SOLO 29€ HOY",
                 h1_full: "Apoye su bienestar urinario de forma natural",
                 hero_desc: "CYSTINORM es una fórmula natural cuidadosamente elaborada y diseñada para ayudar a mantener la salud de la vejiga y promover el bienestar del tracto urinario.",
-                price_limited: "PRECIO LIMITADO",
-                select_country: "SELECCIONE PAÍS:",
+                price_limited: "PRECIO POR TIEMPO LIMITADO",
+                select_country: "ELIJA SU DESTINO:",
                 country_de: "Alemania",
                 country_it: "Italia",
                 country_ch: "Suiza",
@@ -357,7 +405,7 @@
                 trust_1: "GRADO FARMA",
                 trust_2: "PROBADO CLÍNICAMENTE",
                 trust_3: "CERTIFICADO GMP",
-                trust_4: "ESTÁNDAR UE",
+                trust_4: "ESTÁNDARES DE CALIDAD UE",
                 footer_desc: "Soluciones naturales pioneras. Suplementos seguros para una mejor calidad de vida.",
                 footer_title_company: "INFORMACIÓN",
                 footer_title_policies: "POLÍTICAS",
@@ -372,7 +420,9 @@
                 disclaimer_text_2: "CYSTINORM es un suplemento. No destinado a diagnosticar, tratar, curar o prevenir enfermedades.",
                 footer_rights: "Todos los derechos reservados.",
                 modal_close_btn: "Cerrar",
-                footer_authorized_dist: "DISTRIBUIDOR AUTORIZADO"
+                footer_authorized_dist: "DISTRIBUIDOR AUTORIZADO",
+                free_delivery: "Envío Gratis",
+                guarantee_text: "60 Días de Garantía"
             },
             de: {
                 seo_title: "Cystinorm™ | Natürliche Harnwegs- & Blasenunterstützung",
@@ -380,7 +430,7 @@
                 h1_full: "Unterstützen Sie Ihren Harnkomfort natürlich",
                 hero_desc: "CYSTINORM ist eine sorgfältig entwickelte natürliche Formel, die die Gesundheit der Blase unterstützt und das Wohlbefinden der Harnwege fördert.",
                 price_limited: "BEGRENZTER PREIS",
-                select_country: "LAND AUSWÄHLEN:",
+                select_country: "WÄHLEN SIE IHR LAND:",
                 country_de: "Deutschland",
                 country_it: "Italien",
                 country_ch: "Schweiz",
@@ -388,7 +438,7 @@
                 trust_1: "PHARMA-QUALITÄT",
                 trust_2: "KLINISCH GEPRÜFT",
                 trust_3: "GMP-ZERTIFIZIERT",
-                trust_4: "EU-STANDARD",
+                trust_4: "EU-QUALITÄTSSTANDARDS",
                 footer_desc: "Wegweisende natürliche Lösungen. Sichere Nahrungsergänzungsmittel für mehr Lebensqualität.",
                 footer_title_company: "UNTERNEHMEN",
                 footer_title_policies: "RICHTLINIEN",
@@ -403,7 +453,9 @@
                 disclaimer_text_2: "CYSTINORM ist ein Nahrungsergänzungsmittel. Nicht zur Diagnose oder Behandlung von Krankheiten bestimmt.",
                 footer_rights: "Alle Rechte vorbehalten.",
                 modal_close_btn: "Schließen",
-                footer_authorized_dist: "AUTORISIERTER HÄNDLER"
+                footer_authorized_dist: "AUTORISIERTER HÄNDLER",
+                free_delivery: "Gratis Versand",
+                guarantee_text: "60 Tage Garantie"
             },
             it: {
                 seo_title: "Cystinorm™ | Sostegno Naturale per Vie Urinarie e Vescica",
@@ -411,7 +463,7 @@
                 h1_full: "Sostieni il tuo benessere urinario in modo naturale",
                 hero_desc: "CYSTINORM è una formula naturale studiata con cura per aiutare a sostenere la salute della vescica e favorire il comfort del tratto urinario.",
                 price_limited: "PREZZO LIMITATO",
-                select_country: "SELEZIONA PAESE:",
+                select_country: "SCEGLI IL TUO PAESE:",
                 country_de: "Germania",
                 country_it: "Italia",
                 country_ch: "Svizzera",
@@ -419,7 +471,7 @@
                 trust_1: "GRADO FARMA",
                 trust_2: "TEST CLINICI",
                 trust_3: "CERTIFICATO GMP",
-                trust_4: "STANDARD UE",
+                trust_4: "STANDARD DI QUALITÀ UE",
                 footer_desc: "Soluzioni naturali all'avanguardia. Integratori sicuri per una migliore qualidade della vita.",
                 footer_title_company: "AZIENDA",
                 footer_title_policies: "POLITICHE",
@@ -434,7 +486,9 @@
                 disclaimer_text_2: "CYSTINORM è un integratore. Non destinato a diagnosticare, trattare o prevenire malattie.",
                 footer_rights: "Tutti i diritti riservati.",
                 modal_close_btn: "Chiudi",
-                footer_authorized_dist: "DISTRIBUTORE AUTORIZZATO"
+                footer_authorized_dist: "DISTRIBUTORE AUTORIZZATO",
+                free_delivery: "Spedizione Gratuita",
+                guarantee_text: "60 Giorni di Garanzia"
             }
         };
 
