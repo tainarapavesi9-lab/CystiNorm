@@ -1,22 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- PRIMARY META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title data-i18n="seo_title">Cystinorm™ | Natural Urinary Tract Support & Bladder Health</title>
+    <meta name="description" content="Cystinorm™ is a natural formula designed to support urinary tract health and bladder comfort. With cranberry and D-mannose. Fast support and long-term protection.">
+    <meta name="keywords" content="Cystinorm, urinary tract support, bladder health, UTI support, D-mannose supplement, cranberry extract, natural urinary health, bladder comfort, UTI prevention">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.try-cystinorm.shop/">
+
+    <!-- GEO TARGET (EU) -->
+    <meta name="geo.region" content="EU">
+    <meta name="geo.placename" content="Europe">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cystinorm™ | Natural Urinary Tract Support">
+    <meta property="og:description" content="Support your bladder health naturally with Cystinorm™. Designed for urinary comfort and daily wellness.">
+    <meta property="og:url" content="https://www.try-cystinorm.shop/">
+    <meta property="og:image" content="https://www.try-cystinorm.shop/img/product.png">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cystinorm™ | Bladder Support">
+    <meta name="twitter:description" content="Natural urinary tract support with cranberry and D-mannose.">
+    <meta name="twitter:image" content="https://www.try-cystinorm.shop/img/product.png">
+
+    <!-- PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" as="image" href="https://www.try-cystinorm.shop/img/product.png">
+
     <!-- FAVICON -->
     <link rel="icon" href="images/favicon_cystinorm.png" type="image/png">
-
-    <!-- SEO -->
-    <title data-i18n="seo_title">CYSTINORM – Support Your Urinary Comfort Naturally | Only 29€</title>
-    <meta name="description" content="CYSTINORM: A natural formula designed to support bladder health and urinary tract comfort. Only 29€ today. Free shipping included." />
-    <meta name="robots" content="index,follow" />
 
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- SCHEMA: PRODUCT -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Cystinorm",
+      "image": "https://www.try-cystinorm.shop/img/product.png",
+      "description": "Natural supplement designed to support urinary tract health and bladder comfort.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Cystinorm"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.try-cystinorm.shop/",
+        "priceCurrency": "EUR",
+        "price": "29",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+
+    <!-- SCHEMA: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Cystinorm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cystinorm is a natural supplement formulated to support urinary tract health and bladder comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Cystinorm work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It combines ingredients like cranberry extract and D-mannose to support urinary health and help maintain balance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use Cystinorm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cystinorm is designed for adults looking to support urinary tract and bladder wellness."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- SCHEMA: WEBSITE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.try-cystinorm.shop/",
+      "name": "Cystinorm Official",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.try-cystinorm.shop/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- PERFORMANCE EXTRA -->
+    <meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
+    <meta name="theme-color" content="#ffffff">
 
     <style>
         body { 
@@ -26,86 +128,19 @@
             overflow-x: hidden;
             display: none; /* Hidden until translation logic runs */
         }
-
         .star-filled { color: #B83654; fill: #B83654; } 
-        
-        .hero-section-bg { 
-            position: relative; 
-            background-color: transparent; 
-            overflow: hidden; 
-            min-height: 85vh; 
-            display: flex; 
-            align-items: center; 
-        }
-
-        .hero-overlay-pattern {
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%;
-            background-image: radial-gradient(#B59179 0.8px, transparent 0.8px);
-            background-size: 32px 32px;
-            opacity: 0.3;
-            z-index: 0;
-        }
-
-        .hero-glow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(181, 145, 121, 0.2) 0%, rgba(207, 183, 155, 0) 70%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .reveal { 
-            opacity: 0; 
-            transform: translateY(30px); 
-            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); 
-        }
-        .reveal.active { 
-            opacity: 1; 
-            transform: translateY(0); 
-        }
-        
+        .hero-section-bg { position: relative; background-color: transparent; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
+        .hero-overlay-pattern { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(#B59179 0.8px, transparent 0.8px); background-size: 32px 32px; opacity: 0.3; z-index: 0; }
+        .hero-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(181, 145, 121, 0.2) 0%, rgba(207, 183, 155, 0) 70%); z-index: 1; pointer-events: none; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
         .modal-open { overflow: hidden; }
-        
         .brand-bg { background-color: #B83654; } 
         .brand-text { color: #B83654; }
-        
-        .cta-button {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background: linear-gradient(135deg, #B83654 0%, #922b43 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px) scale(1.01);
-            box-shadow: 0 15px 25px -5px rgba(184, 54, 84, 0.4);
-        }
-
-        .product-shadow {
-            filter: drop-shadow(0 30px 50px rgba(45, 36, 30, 0.25));
-        }
-
-        .offer-badge {
-            background: white;
-            color: #452b1e;
-            border: 1px solid rgba(181, 145, 121, 0.2);
-        }
-
-        @keyframes pulse-soft {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.05); opacity: 0.9; }
-        }
-        .animate-pulse-soft {
-            animation: pulse-soft 3s infinite ease-in-out;
-        }
+        .cta-button { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: linear-gradient(135deg, #B83654 0%, #922b43 100%); position: relative; overflow: hidden; }
+        .cta-button:hover { transform: translateY(-2px) scale(1.01); box-shadow: 0 15px 25px -5px rgba(184, 54, 84, 0.4); }
+        .product-shadow { filter: drop-shadow(0 30px 50px rgba(45, 36, 30, 0.25)); }
+        .offer-badge { background: white; color: #452b1e; border: 1px solid rgba(181, 145, 121, 0.2); }
     </style>
 </head>
 <body class="antialiased">
@@ -128,16 +163,10 @@
                     <!-- Left Column: Product Image -->
                     <div class="reveal flex flex-col items-center justify-center lg:order-1 order-2">
                         <div class="relative group">
-                            <!-- Background Decoration (as seen in screenshot) -->
+                            <!-- Background Decoration -->
                             <div class="absolute -inset-16 bg-white/20 rounded-full blur-[80px] z-0 opacity-40"></div>
                             
-                            <!-- Savings Badge -->
-                            <div class="absolute -top-4 -right-4 lg:-right-6 z-20 bg-[#B83654] text-white w-20 h-20 rounded-full flex flex-col items-center justify-center shadow-2xl border-4 border-white rotate-12 animate-pulse-soft">
-                                <span class="text-[8px] uppercase font-bold opacity-80" data-i18n="price_badge_text">NOW ONLY</span>
-                                <span class="text-xl font-black leading-none">29€</span>
-                                <span class="text-[9px] line-through opacity-60">58€</span>
-                            </div>
-
+                            <!-- Circular Badge Removed per request -->
                             <img src="images/cystonorm-2-md.png" alt="CYSTINORM Bottle" class="relative z-10 w-full max-w-[340px] lg:max-w-[400px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
                         </div>
                     </div>
@@ -284,11 +313,10 @@
     <script>
         const translations = {
             en: {
-                seo_title: "CYSTINORM – Support Your Urinary Comfort Naturally | Only 29€",
+                seo_title: "Cystinorm™ | Natural Urinary Tract Support & Bladder Health",
                 badge_offer: "SPECIAL OFFER: ONLY 29€ TODAY",
                 h1_full: "Support Your Urinary Comfort Naturally",
                 hero_desc: "CYSTINORM is a carefully crafted natural formula designed to help support bladder health, promote urinary tract comfort, and fit easily into your daily wellness routine.",
-                price_badge_text: "NOW ONLY",
                 price_limited: "LIMITED TIME PRICE",
                 select_country: "SELECT YOUR COUNTRY:",
                 country_de: "Germany",
@@ -316,11 +344,10 @@
                 footer_authorized_dist: "AUTHORIZED DISTRIBUTOR"
             },
             es: {
-                seo_title: "CYSTINORM – Apoyo Urinario Natural | Solo 29€",
+                seo_title: "Cystinorm™ | Apoyo Natural para Tracto Urinario y Vejiga",
                 badge_offer: "OFERTA ESPECIAL: SOLO 29€ HOY",
                 h1_full: "Apoye su bienestar urinario de forma natural",
                 hero_desc: "CYSTINORM es una fórmula natural cuidadosamente elaborada y diseñada para ayudar a mantener la salud de la vejiga y promover el bienestar del tracto urinario.",
-                price_badge_text: "AHORA SOLO",
                 price_limited: "PRECIO LIMITADO",
                 select_country: "SELECCIONE PAÍS:",
                 country_de: "Alemania",
@@ -348,11 +375,10 @@
                 footer_authorized_dist: "DISTRIBUIDOR AUTORIZADO"
             },
             de: {
-                seo_title: "CYSTINORM – Natürliche Unterstützung | Nur 29€",
+                seo_title: "Cystinorm™ | Natürliche Harnwegs- & Blasenunterstützung",
                 badge_offer: "SONDERANGEBOT: NUR 29€ HEUTE",
                 h1_full: "Unterstützen Sie Ihren Harnkomfort natürlich",
                 hero_desc: "CYSTINORM ist eine sorgfältig entwickelte natürliche Formel, die die Gesundheit der Blase unterstützt und das Wohlbefinden der Harnwege fördert.",
-                price_badge_text: "JETZT NUR",
                 price_limited: "BEGRENZTER PREIS",
                 select_country: "LAND AUSWÄHLEN:",
                 country_de: "Deutschland",
@@ -380,11 +406,10 @@
                 footer_authorized_dist: "AUTORISIERTER HÄNDLER"
             },
             it: {
-                seo_title: "CYSTINORM – Sostegno Urinario Naturale | Solo 29€",
+                seo_title: "Cystinorm™ | Sostegno Naturale per Vie Urinarie e Vescica",
                 badge_offer: "OFFERTA SPECIALE: SOLO 29€ OGGI",
                 h1_full: "Sostieni il tuo benessere urinario in modo naturale",
                 hero_desc: "CYSTINORM è una formula naturale studiata con cura per aiutare a sostenere la salute della vescica e favorire il comfort del tratto urinario.",
-                price_badge_text: "ORA SOLO",
                 price_limited: "PREZZO LIMITATO",
                 select_country: "SELEZIONA PAESE:",
                 country_de: "Germania",
@@ -395,7 +420,7 @@
                 trust_2: "TEST CLINICI",
                 trust_3: "CERTIFICATO GMP",
                 trust_4: "STANDARD UE",
-                footer_desc: "Soluzioni naturali all'avanguardia. Integratori sicuri per una migliore qualità della vita.",
+                footer_desc: "Soluzioni naturali all'avanguardia. Integratori sicuri per una migliore qualidade della vita.",
                 footer_title_company: "AZIENDA",
                 footer_title_policies: "POLITICHE",
                 footer_title_help: "SUPPORTO",
