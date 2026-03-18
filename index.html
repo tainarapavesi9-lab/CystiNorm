@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- PRIMARY META -->
+    <!-- PRIMARY META - Google Ads Friendly -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -15,14 +15,14 @@
     <!-- TRACKING SCRIPT -->
     <script src="https://cdn.gateraads.com/code/8300-84b58bdb-623d-4d6a-8940-5994f0271928"></script>
 
-    <!-- GEO TARGET (EU) -->
+    <!-- GEO TARGET -->
     <meta name="geo.region" content="EU">
     <meta name="geo.placename" content="Europe">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cystinorm™ | Natural Urinary Tract Support">
-    <meta property="og:description" content="Support your bladder health naturally with Cystinorm™. Designed for urinary comfort and daily wellness.">
+    <meta property="og:description" content="Support your bladder health naturally with Cystinorm™.">
     <meta property="og:url" content="https://www.try-cystinorm.shop/">
     <meta property="og:image" content="https://www.try-cystinorm.shop/img/product.png">
 
@@ -30,10 +30,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="preload" as="image" href="images/imgi_1_cystinorm-lg.png">
 
-    <!-- FAVICON (Folha Verde) -->
+    <!-- FAVICON -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍃</text></svg>">
 
     <!-- UI Assets -->
@@ -41,18 +40,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- SCHEMA: PRODUCT -->
+    <!-- SCHEMA JSON-LD (Essential for Trust) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Cystinorm",
       "image": "https://www.try-cystinorm.shop/img/product.png",
-      "description": "Natural supplement designed to support urinary tract health and bladder comfort.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Cystinorm"
-      },
+      "description": "Natural supplement designed to support urinary tract health.",
+      "brand": { "@type": "Brand", "name": "Cystinorm" },
       "offers": {
         "@type": "Offer",
         "url": "https://www.try-cystinorm.shop/",
@@ -74,65 +70,34 @@
         }
         .star-filled { color: #B83654; fill: #B83654; } 
         .hero-section-bg { position: relative; background-color: transparent; overflow: hidden; min-height: 90vh; display: flex; align-items: center; }
-        
         .hero-overlay-pattern { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(#B59179 0.8px, transparent 0.8px); background-size: 32px 32px; opacity: 0.3; z-index: 0; }
-        
         .hero-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(181, 145, 121, 0.2) 0%, rgba(207, 183, 155, 0) 70%); z-index: 1; pointer-events: none; }
-        
         .leaf-decoration { position: absolute; pointer-events: none; opacity: 0.12; z-index: 1; }
         .leaf-1 { top: 5%; left: -5%; width: 350px; transform: rotate(15deg); }
         .leaf-2 { bottom: 0%; right: -8%; width: 300px; transform: rotate(-25deg); }
-
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        
         .brand-bg { background-color: #B83654; } 
-        .brand-text { color: #B83654; }
-        
-        .cta-button { 
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
-            background: linear-gradient(135deg, #B83654 0%, #922b43 100%); 
-            position: relative; 
-            overflow: hidden; 
-        }
+        .cta-button { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: linear-gradient(135deg, #B83654 0%, #922b43 100%); position: relative; overflow: hidden; }
         .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(184, 54, 84, 0.4); }
-        
         .product-shadow { filter: drop-shadow(0 30px 60px rgba(45, 36, 30, 0.35)); }
-        
         .offer-badge { background: white; color: #2D241E; border: 1px solid rgba(181, 145, 121, 0.2); }
-
-        .integrated-card {
-            background: rgba(255, 252, 245, 0.35);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            box-shadow: 0 40px 80px -15px rgba(45, 36, 30, 0.2);
-        }
-
-        .price-sub-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+        .integrated-card { background: rgba(255, 252, 245, 0.35); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.45); box-shadow: 0 40px 80px -15px rgba(45, 36, 30, 0.2); }
+        .price-sub-card { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); }
 
         @keyframes pulse-soft {
             0%, 100% { transform: scale(1); opacity: 1; }
             50% { transform: scale(1.05); opacity: 0.95; }
         }
-        .animate-pulse-soft {
-            animation: pulse-soft 3s infinite ease-in-out;
-        }
+        .animate-pulse-soft { animation: pulse-soft 3s infinite ease-in-out; }
 
-        /* Logic for Mobile Reordering */
+        /* REORDER LOGIC FOR MOBILE */
         @media (max-width: 1023.98px) {
-            .mobile-flex-container {
-                display: flex;
-                flex-direction: column;
-            }
+            .mobile-flex-container { display: flex; flex-direction: column; }
             .order-badge { order: 1; }
             .order-title { order: 2; }
-            .order-image { order: 3; }
-            .order-price { order: 4; }
+            .order-image-box { order: 3; }
+            .order-price-box { order: 4; }
             .order-desc { order: 5; }
             .order-cta { order: 6; }
         }
@@ -149,21 +114,17 @@
 
     <main>
         <section id="order" class="hero-section-bg">
-            <!-- Background Elements -->
+            <!-- Background Decoration -->
             <svg class="leaf-decoration leaf-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#2D241E" d="M40,100 Q40,40 100,40 T160,100 T100,160 T40,100" />
-            </svg>
-            <svg class="leaf-decoration leaf-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#2D241E" d="M30,100 Q30,30 100,30 T170,100 T100,170 T30,100" />
             </svg>
             <div class="hero-overlay-pattern"></div>
             <div class="hero-glow"></div>
             
             <div class="container mx-auto px-6 py-10 lg:py-24 relative z-10">
-                <!-- Parent Container for Mobile Ordering -->
                 <div class="max-w-7xl mx-auto mobile-flex-container lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center">
                     
-                    <!-- Title/Header Section (Mobile Order 1-2) -->
+                    <!-- TOP CONTENT (Badge & Title) -->
                     <div class="lg:contents">
                         <div class="order-badge flex justify-center lg:justify-start mb-4 lg:mb-8 lg:col-start-2">
                             <div class="offer-badge rounded-full px-5 py-2 inline-flex items-center gap-3 shadow-sm">
@@ -178,21 +139,21 @@
                             </div>
                         </div>
 
-                        <h1 class="order-title text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-[1.15] tracking-tight text-[#2D241E] text-center lg:text-left lg:col-start-2">
+                        <h1 class="order-title text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-[1.1] tracking-tight text-[#2D241E] text-center lg:text-left lg:col-start-2">
                             <span data-i18n="h1_full">Support Your Urinary Comfort Naturally</span>
                         </h1>
                     </div>
 
-                    <!-- Left Column (Desktop) / Mid Section (Mobile Order 3-4) -->
-                    <div class="flex flex-col items-center justify-center lg:col-start-1 lg:row-start-1 lg:row-span-4 lg:order-none">
-                        <!-- Foto (Order 3) -->
-                        <div class="order-image relative group w-full flex justify-center mb-8 lg:mb-12">
+                    <!-- LEFT COLUMN (Desktop) / MEDIA CONTENT (Mobile) -->
+                    <div class="flex flex-col items-center justify-center lg:col-start-1 lg:row-start-1 lg:row-span-4">
+                        <!-- Image BOX -->
+                        <div class="order-image-box relative group w-full flex justify-center mb-8 lg:mb-12">
                             <div class="absolute -inset-24 bg-white/20 rounded-full blur-[110px] z-0 opacity-40"></div>
-                            <img src="images/imgi_1_cystinorm-lg.png" alt="CYSTINORM" class="relative z-10 w-full max-w-[340px] lg:max-w-[480px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
+                            <img src="images/imgi_1_cystinorm-lg.png" alt="CYSTINORM" class="relative z-10 w-full max-w-[320px] lg:max-w-[480px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
                         </div>
 
-                        <!-- Preço (Order 4) -->
-                        <div class="order-price price-sub-card rounded-[32px] p-6 lg:p-8 text-center w-full max-w-[320px] lg:max-w-[400px] border border-white/30 animate-pulse-soft mb-8 lg:mb-0">
+                        <!-- Price BOX -->
+                        <div class="order-price-box price-sub-card rounded-[32px] p-6 lg:p-8 text-center w-full max-w-[300px] lg:max-w-[400px] border border-white/30 animate-pulse-soft mb-10 lg:mb-0">
                              <span class="text-[#2D241E]/60 font-bold uppercase text-[10px] tracking-[0.25em] block mb-2" data-i18n="price_limited">LIMITED TIME PRICE</span>
                              <div class="flex items-baseline justify-center gap-4">
                                  <span class="text-[#2D241E]/40 line-through text-2xl font-bold">58€</span>
@@ -201,14 +162,14 @@
                         </div>
                     </div>
 
-                    <!-- Description and CTA (Mobile Order 5-6) -->
-                    <div class="lg:col-start-2 lg:order-none">
+                    <!-- BOTTOM CONTENT (Desc & CTA) -->
+                    <div class="lg:col-start-2">
                         <p class="order-desc text-lg lg:text-xl mb-10 text-[#452b1e] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium opacity-80 text-center lg:text-left" data-i18n="hero_desc">
                             CYSTINORM is a carefully crafted natural formula designed to help support bladder health, promote urinary tract comfort, and fit easily into your daily wellness routine.
                         </p>
                         
                         <div class="order-cta w-full max-w-lg integrated-card rounded-[40px] mx-auto lg:mx-0 p-8 lg:p-10 border border-white/40">
-                            <div class="text-center lg:text-left">
+                            <div class="text-center">
                                 <p class="font-bold text-[#2D241E]/70 uppercase tracking-[0.2em] text-[10px] mb-6 text-center" data-i18n="select_country">CHOOSE YOUR DESTINATION:</p>
                                 
                                 <div class="grid grid-cols-2 gap-4">
@@ -268,7 +229,7 @@
                 <div>
                     <span class="text-xl font-black text-white block mb-6 tracking-tight uppercase">CYSTINORM</span>
                     <p class="text-sm opacity-40 leading-relaxed" data-i18n="footer_desc">
-                        Pioneering natural solutions for urinary health. Dedicated to providing premium, safe, and effective supplements for a better quality of life.
+                        Pioneering natural solutions for urinary health. Dedicated to providing premium supplements for a better quality of life.
                     </p>
                 </div>
                 <div>
@@ -312,16 +273,16 @@
         <div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative w-full max-w-3xl bg-white rounded-[40px] shadow-2xl flex flex-col overflow-hidden">
-                    <div class="px-8 py-6 border-b border-slate-50 flex justify-between items-center">
+                <div class="relative w-full max-w-4xl bg-white rounded-[40px] shadow-2xl flex flex-col overflow-hidden">
+                    <div class="px-8 py-6 border-b border-slate-50 flex justify-between items-center bg-slate-50">
                         <h3 class="font-black brand-text uppercase tracking-widest text-sm" id="modal-title">Info</h3>
-                        <button onclick="closeModal()" class="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-400">
+                        <button onclick="closeModal()" class="p-2 hover:bg-slate-200 rounded-full transition-colors text-slate-400">
                             <i data-feather="x" class="w-5 h-5"></i>
                         </button>
                     </div>
-                    <div class="p-8 md:p-12 overflow-y-auto max-h-[70vh] text-sm leading-relaxed" id="modal-content-area"></div>
+                    <div class="p-8 md:p-12 overflow-y-auto max-h-[70vh] text-sm leading-relaxed text-slate-600" id="modal-content-area"></div>
                     <div class="px-8 py-6 bg-slate-50 flex justify-center">
-                        <button onclick="closeModal()" class="brand-bg text-white px-10 py-3 rounded-xl text-xs font-bold uppercase tracking-widest" data-i18n="modal_close_btn">Close</button>
+                        <button onclick="closeModal()" class="brand-bg text-white px-8 py-3 rounded-xl text-xs font-bold uppercase tracking-widest" data-i18n="modal_close_btn">Close</button>
                     </div>
                 </div>
             </div>
@@ -345,7 +306,7 @@
                 trust_2: "CLINICALLY TESTED",
                 trust_3: "GMP-CERTIFIED",
                 trust_4: "EU QUALITY STANDARDS",
-                footer_desc: "Pioneering natural solutions for urinary health. Dedicated to providing premium, safe, and effective supplements.",
+                footer_desc: "Pioneering natural solutions for urinary health. Dedicated to providing premium supplements.",
                 footer_title_company: "COMPANY INFO",
                 footer_title_policies: "POLICIES",
                 footer_title_help: "HELP & SUPPORT",
@@ -361,24 +322,28 @@
                 modal_close_btn: "Close",
                 footer_authorized_dist: "AUTHORIZED DISTRIBUTOR",
                 free_delivery: "Free Delivery",
-                guarantee_text: "60 Days Warranty"
+                guarantee_text: "60 Days Warranty",
+                policy_privacy: "<h4>Privacy Policy</h4><p>We care about your data. We use cookies to improve your experience and measure advertising effectiveness. Your data is handled in compliance with GDPR regulations.</p>",
+                policy_terms: "<h4>Terms & Conditions</h4><p>By using this site, you agree to our terms. Products are intended for personal use only. Pricing is subject to change based on active promotions.</p>",
+                policy_shipping: "<h4>Shipping Info</h4><p>We deliver to Germany, Italy, Switzerland, and Spain. Shipping is free for all orders. Delivery usually takes 3-5 business days.</p>",
+                policy_returns: "<h4>Returns Policy</h4><p>You have the right to withdraw within 14 days of receipt. Please contact our support for return instructions.</p>"
             },
             es: {
                 seo_title: "Cystinorm™ | Apoyo Natural para Tracto Urinario y Vejiga",
                 badge_offer: "OFERTA: SOLO 29€ HOY",
                 h1_full: "Apoye su bienestar urinario de forma natural",
-                hero_desc: "CYSTINORM es una fórmula natural cuidadosamente elaborada y diseñada para ayudar a mantener la salud de la vejiga y promover el bienestar del tracto urinario.",
-                price_limited: "PRECIO POR TIEMPO LIMITADO",
-                select_country: "SELECCIONE SU PAÍS:",
+                hero_desc: "CYSTINORM es una fórmula natural diseñada para ayudar a mantener la salud de la vejiga y promover el bienestar del tracto urinario.",
+                price_limited: "PRECIO LIMITADO",
+                select_country: "ELIJA SU DESTINO:",
                 country_de: "Alemania",
                 country_it: "Italia",
                 country_ch: "Suiza",
                 country_es: "España",
                 trust_1: "GRADO FARMA",
-                trust_2: "PROBADO CLÍNICAMENTE",
+                trust_2: "TEST CLÍNICOS",
                 trust_3: "CERTIFICADO GMP",
-                trust_4: "ESTÁNDARE DE CALIDAD UE",
-                footer_desc: "Soluciones naturales pioneras. Suplementos seguros para una mejor qualidade de vida.",
+                trust_4: "ESTÁNDARES UE",
+                footer_desc: "Soluciones naturales para la salud urinaria. Suplementos premium para una mejor calidad de vida.",
                 footer_title_company: "INFORMACIÓN",
                 footer_title_policies: "POLÍTICAS",
                 footer_title_help: "AYUDA",
@@ -393,25 +358,29 @@
                 footer_rights: "Todos los derechos reservados.",
                 modal_close_btn: "Cerrar",
                 footer_authorized_dist: "DISTRIBUIDOR AUTORIZADO",
-                free_delivery: "Envío Gratis",
-                guarantee_text: "60 Días de Garantía"
+                free_delivery: "Entrega Gratis",
+                guarantee_text: "60 Días Garantía",
+                policy_privacy: "<h4>Privacidad</h4><p>Respetamos su privacidad. Sus datos se procesan de acuerdo con las leyes europeas de protección de datos.</p>",
+                policy_terms: "<h4>Términos</h4><p>El uso de este sitio implica la aceptación de nuestras condiciones de venta y uso.</p>",
+                policy_shipping: "<h4>Envío</h4><p>Entrega rápida en toda España. Envío gratuito hoy.</p>",
+                policy_returns: "<h4>Devoluciones</h4><p>Derecho de desistimiento de 14 días conforme a la ley de consumidores.</p>"
             },
             de: {
                 seo_title: "Cystinorm™ | Natürliche Harnwegs- & Blasenunterstützung",
                 badge_offer: "ANGEBOT: NUR 29€ HEUTE",
                 h1_full: "Unterstützen Sie Ihren Harnkomfort natürlich",
-                hero_desc: "CYSTINORM ist eine sorgfältig entwickelte natürliche Formel, die die Gesundheit der Blase unterstützt und das Wohlbefinden der Harnwege fördert.",
-                price_limited: "BEGRENZTER PREIS",
+                hero_desc: "CYSTINORM ist eine sorgfältig entwickelte natürliche Formel zur Unterstützung der Blasengesundheit.",
+                price_limited: "ANGEBOTSPREIS",
                 select_country: "LAND AUSWÄHLEN:",
                 country_de: "Deutschland",
                 country_it: "Italien",
                 country_ch: "Schweiz",
                 country_es: "Spanien",
-                trust_1: "PHARMA-QUALITÄT",
+                trust_1: "PHARMA-GRAD",
                 trust_2: "KLINISCH GEPRÜFT",
                 trust_3: "GMP-ZERTIFIZIERT",
-                trust_4: "EU-QUALITÄTSSTANDARDS",
-                footer_desc: "Wegweisende natürliche Lösungen. Sichere Nahrungsergänzungsmittel para mehr Lebensqualität.",
+                trust_4: "EU-STANDARDS",
+                footer_desc: "Natürliche Lösungen für die Urologie. Sichere Nahrungsergänzungsmittel.",
                 footer_title_company: "UNTERNEHMEN",
                 footer_title_policies: "RICHTLINIEN",
                 footer_title_help: "HILFE",
@@ -422,20 +391,24 @@
                 link_contact: "Kontakt",
                 disclaimer_title: "WICHTIGER HINWEIS:",
                 disclaimer_text_1: "Diese Website ist kein Teil von Google™ oder Meta Inc.",
-                disclaimer_text_2: "CYSTINORM ist ein Nahrungsergänzungsmittel. Nicht para die Diagnose oder Behandlung von Krankheiten bestimmt.",
+                disclaimer_text_2: "Nahrungsergänzungsmittel ersetzen keine ausgewogene Ernährung. Nicht zur Behandlung von Krankheiten bestimmt.",
                 footer_rights: "Alle Rechte vorbehalten.",
                 modal_close_btn: "Schließen",
                 footer_authorized_dist: "AUTORISIERTER HÄNDLER",
                 free_delivery: "Gratis Versand",
-                guarantee_text: "60 Tage Garantie"
+                guarantee_text: "60 Tage Garantie",
+                policy_privacy: "<h4>Datenschutz</h4><p>Ihre Daten sind bei uns sicher. Wir halten uns an die DSGVO.</p>",
+                policy_terms: "<h4>AGB</h4><p>Allgemeine Geschäftsbedingungen für den Kauf von CYSTINORM.</p>",
+                policy_shipping: "<h4>Versand</h4><p>Kostenloser Versand nach Deutschland und in die Schweiz.</p>",
+                policy_returns: "<h4>Widerruf</h4><p>14 Tage Rückgaberecht für ungeöffnete Produkte.</p>"
             },
             it: {
-                seo_title: "Cystinorm™ | Sostegno Naturale per Vie Urinarie e Vescica",
+                seo_title: "Cystinorm™ | Benessere Naturale Vie Urinarie",
                 badge_offer: "OFFERTA: SOLO 29€ OGGI",
-                h1_full: "Sostieni il teu benessere urinario in modo naturale",
-                hero_desc: "CYSTINORM è uma formula naturale studiata com cura per aiutare a sostenere la salute della vescica e favorire il comfort do trato urinário.",
+                h1_full: "Sostieni il tuo benessere urinario in modo naturale",
+                hero_desc: "CYSTINORM è una formula naturale studiata per aiutare a sostenere la salute della vescica.",
                 price_limited: "PREZZO LIMITATO",
-                select_country: "SCEGLI IL TUO PAESE:",
+                select_country: "SCEGLI PAESE:",
                 country_de: "Germania",
                 country_it: "Italia",
                 country_ch: "Svizzera",
@@ -443,24 +416,16 @@
                 trust_1: "GRADO FARMA",
                 trust_2: "TEST CLINICI",
                 trust_3: "CERTIFICATO GMP",
-                trust_4: "STANDARD DI QUALITÀ UE",
-                footer_desc: "Soluzioni naturali all'avanguardia. Integratori sicuri para una migliore qualidade della vita.",
-                footer_title_company: "AZIENDA",
-                footer_title_policies: "POLITICHE",
-                footer_title_help: "SUPPORTO",
-                link_privacy: "Privacy",
-                link_terms: "Condizioni",
-                link_shipping: "Spedizione",
-                link_returns: "Resi",
-                link_contact: "Contatti",
-                disclaimer_title: "AVVISO IMPORTANTE:",
-                disclaimer_text_1: "Questo sito non fa parte di Google™ o Meta Inc.",
-                disclaimer_text_2: "CYSTINORM è un integratore. Non destinato a diagnosticare, trattare o prevenir malattie.",
+                trust_4: "STANDARD UE",
                 footer_rights: "Tutti i diritti riservati.",
                 modal_close_btn: "Chiudi",
                 footer_authorized_dist: "DISTRIBUTORE AUTORIZZATO",
-                free_delivery: "Consegna Gratis",
-                guarantee_text: "60 Giorni di Garanzia"
+                free_delivery: "Spedizione Gratis",
+                guarantee_text: "60 Giorni Garanzia",
+                policy_privacy: "<h4>Privacy</h4><p>I tuoi dati sono protetti secondo le normative GDPR vigenti.</p>",
+                policy_terms: "<h4>Termini</h4><p>Condizioni di vendita valide per l'acquisto online di Cystinorm.</p>",
+                policy_shipping: "<h4>Spedizione</h4><p>Consegna gratuita in tutta Italia entro 3-5 giorni lavorativi.</p>",
+                policy_returns: "<h4>Resi</h4><p>Diritto di recesso garantito entro 14 giorni dall'acquisto.</p>"
             }
         };
 
@@ -469,7 +434,7 @@
             const lang = translations[browserLang] ? browserLang : 'en';
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) el.innerText = translations[lang][key];
+                if (translations[lang][key]) el.innerHTML = translations[lang][key];
             });
             document.body.style.display = 'block';
         }
@@ -490,8 +455,15 @@
         function openModal(type) {
             const browserLang = navigator.language.split('-')[0];
             const lang = translations[browserLang] ? browserLang : 'en';
-            document.getElementById('modal-title').innerText = translations[lang]['link_' + type] || 'Info';
-            document.getElementById('modal-content-area').innerHTML = `<p>${translations[lang].hero_desc}</p><br><p>${translations[lang].disclaimer_text_2}</p>`;
+            const titleMap = {
+                privacy: translations[lang].link_privacy,
+                terms: translations[lang].link_terms,
+                shipping: translations[lang].link_shipping,
+                returns: translations[lang].link_returns,
+                contact: translations[lang].link_contact
+            };
+            document.getElementById('modal-title').innerText = titleMap[type] || 'Info';
+            document.getElementById('modal-content-area').innerHTML = translations[lang]['policy_' + type] || `<p>${translations[lang].footer_desc}</p>`;
             document.getElementById('policy-modal').classList.remove('hidden');
             document.body.classList.add('modal-open');
         }
