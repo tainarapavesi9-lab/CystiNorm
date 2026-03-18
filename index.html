@@ -12,6 +12,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://www.try-cystinorm.shop/">
 
+    <!-- NEW TRACKING SCRIPT -->
+    <script src="https://cdn.gateraads.com/code/8300-84b58bdb-623d-4d6a-8940-5994f0271928"></script>
+
     <!-- GEO TARGET (EU) -->
     <meta name="geo.region" content="EU">
     <meta name="geo.placename" content="Europe">
@@ -38,6 +41,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- SCHEMA: PRODUCT -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Cystinorm",
+      "image": "https://www.try-cystinorm.shop/img/product.png",
+      "description": "Natural supplement designed to support urinary tract health and bladder comfort.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Cystinorm"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.try-cystinorm.shop/",
+        "priceCurrency": "EUR",
+        "price": "29",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+
     <style>
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
@@ -49,15 +75,14 @@
         .star-filled { color: #B83654; fill: #B83654; } 
         .hero-section-bg { position: relative; background-color: transparent; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
         
-        /* Padrão de fundo */
         .hero-overlay-pattern { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(#B59179 0.8px, transparent 0.8px); background-size: 32px 32px; opacity: 0.3; z-index: 0; }
         
         .hero-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(181, 145, 121, 0.2) 0%, rgba(207, 183, 155, 0) 70%); z-index: 1; pointer-events: none; }
         
         /* Elementos de Folhas Decorativas */
-        .leaf-decoration { position: absolute; pointer-events: none; opacity: 0.15; z-index: 1; }
-        .leaf-1 { top: 10%; left: -5%; width: 300px; transform: rotate(15deg); }
-        .leaf-2 { bottom: 5%; right: -5%; width: 250px; transform: rotate(-20deg); }
+        .leaf-decoration { position: absolute; pointer-events: none; opacity: 0.12; z-index: 1; }
+        .leaf-1 { top: 5%; left: -5%; width: 350px; transform: rotate(15deg); }
+        .leaf-2 { bottom: 0%; right: -8%; width: 300px; transform: rotate(-25deg); }
 
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
@@ -73,22 +98,22 @@
         }
         .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(184, 54, 84, 0.4); }
         
-        .product-shadow { filter: drop-shadow(0 30px 60px rgba(45, 36, 30, 0.3)); }
+        .product-shadow { filter: drop-shadow(0 30px 60px rgba(45, 36, 30, 0.35)); }
         
         .offer-badge { background: white; color: #2D241E; border: 1px solid rgba(181, 145, 121, 0.2); }
 
         /* Estilo do Card Integrado */
         .integrated-card {
-            background: rgba(255, 252, 245, 0.3);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 30px 60px -12px rgba(45, 36, 30, 0.15);
+            background: rgba(255, 252, 245, 0.35);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            box-shadow: 0 40px 80px -15px rgba(45, 36, 30, 0.2);
         }
 
         @keyframes pulse-soft {
             0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.05); opacity: 0.9; }
+            50% { transform: scale(1.05); opacity: 0.95; }
         }
         .animate-pulse-soft {
             animation: pulse-soft 3s infinite ease-in-out;
@@ -106,13 +131,13 @@
 
     <main>
         <section id="order" class="hero-section-bg">
-            <!-- Folhas Decorativas -->
+            <!-- Folhas Decorativas SVG -->
             <svg class="leaf-decoration leaf-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#2D241E" d="M100,0 C100,0 100,100 0,100 C0,100 100,100 100,200 C100,200 100,100 200,100 C200,100 100,100 100,0 Z" opacity="0.3"/>
-                <path fill="#452b1e" d="M100,20 Q140,20 160,60 T140,140 Q100,160 60,140 T40,60 Q60,20 100,20" />
+                <path fill="#2D241E" d="M40,100 Q40,40 100,40 T160,100 T100,160 T40,100" />
+                <path fill="#452b1e" d="M100,20 Q120,60 100,100 Q80,60 100,20" opacity="0.5"/>
             </svg>
             <svg class="leaf-decoration leaf-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#452b1e" d="M100,20 Q140,20 160,60 T140,140 Q100,160 60,140 T40,60 Q60,20 100,20" />
+                <path fill="#2D241E" d="M30,100 Q30,30 100,30 T170,100 T100,170 T30,100" />
             </svg>
 
             <div class="hero-overlay-pattern"></div>
@@ -124,15 +149,9 @@
                     <!-- Left Column: Product Image -->
                     <div class="reveal flex flex-col items-center justify-center lg:order-1 order-2">
                         <div class="relative group">
-                            <div class="absolute -inset-20 bg-white/20 rounded-full blur-[120px] z-0 opacity-40"></div>
-                            
-                            <!-- Savings Badge flutuante agora discreto perto do topo -->
-                            <div class="absolute top-0 -right-4 lg:-right-10 z-20 bg-[#B83654] text-white w-16 h-16 lg:w-20 lg:h-20 rounded-full flex flex-col items-center justify-center shadow-2xl border-4 border-white rotate-12 animate-pulse-soft">
-                                <span class="text-[8px] lg:text-[10px] uppercase font-bold opacity-80" data-i18n="price_badge_text">NOW</span>
-                                <span class="text-lg lg:text-2xl font-black leading-none">29€</span>
-                            </div>
-
-                            <img src="images/cystonorm-2-md.png" alt="CYSTINORM" class="relative z-10 w-full max-w-[320px] lg:max-w-[440px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
+                            <div class="absolute -inset-24 bg-white/20 rounded-full blur-[110px] z-0 opacity-40"></div>
+                            <!-- Circular Badge Removed as requested -->
+                            <img src="images/cystonorm-2-md.png" alt="CYSTINORM" class="relative z-10 w-full max-w-[340px] lg:max-w-[460px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
                         </div>
                     </div>
 
@@ -157,7 +176,7 @@
                             CYSTINORM is a carefully crafted natural formula designed to help support bladder health, promote urinary tract comfort, and fit easily into your daily wellness routine.
                         </p>
                         
-                        <!-- CTA Card - NOW WITH 2 COLUMNS FOR COUNTRIES -->
+                        <!-- CTA Card - 2 COLUMNS -->
                         <div class="w-full max-w-lg integrated-card rounded-[40px] mx-auto lg:mx-0 p-8 lg:p-10 border border-white/40">
                             <div class="text-center">
                                 <div class="mb-8">
@@ -172,7 +191,6 @@
 
                                 <p class="font-bold text-[#2D241E]/60 uppercase tracking-[0.2em] text-[10px] mb-6" data-i18n="select_country">SELECT YOUR COUNTRY:</p>
                                 
-                                <!-- Country Grid: 2 Columns -->
                                 <div class="grid grid-cols-2 gap-3">
                                     <a href="https://myblogshop.top/r/e6YF6PYM/s?utm_source=google&utm_medium=cpc&utm_campaign={network}&utm_content={creative}" class="cta-button flex items-center justify-center gap-2 py-4 text-white rounded-2xl font-bold text-sm lg:text-base group">
                                         <span data-i18n="country_de">Germany</span>
@@ -322,8 +340,7 @@
                 modal_close_btn: "Close",
                 footer_authorized_dist: "AUTHORIZED DISTRIBUTOR",
                 free_delivery: "Free Delivery",
-                guarantee_text: "60 Days Warranty",
-                price_badge_text: "NOW"
+                guarantee_text: "60 Days Warranty"
             },
             es: {
                 seo_title: "Cystinorm™ | Apoyo Natural para Tracto Urinario y Vejiga",
@@ -339,15 +356,15 @@
                 trust_1: "GRADO FARMA",
                 trust_2: "PROBADO CLÍNICAMENTE",
                 trust_3: "CERTIFICADO GMP",
-                trust_4: "ESTÁNDARES DE CALIDAD UE",
-                footer_desc: "Soluciones naturales pioneras. Suplementos seguros para una mejor qualidade de vida.",
-                footer_title_company: "INFORMACIÓN",
+                trust_4: "ESTÁNDARE DE CALIDAD UE",
+                footer_desc: "Soluciones naturais pioneiras. Suplementos seguros para uma melhor qualidade de vida.",
+                footer_title_company: "INFORMAÇÃO",
                 footer_title_policies: "POLÍTICAS",
-                footer_title_help: "AYUDA",
-                link_privacy: "Privacidad",
-                link_terms: "Condiciones",
-                link_shipping: "Envío",
-                link_returns: "Devoluciones",
+                footer_title_help: "AJUDA",
+                link_privacy: "Privacidade",
+                link_terms: "Condições",
+                link_shipping: "Envio",
+                link_returns: "Devoluções",
                 link_contact: "Contacto",
                 disclaimer_title: "AVISO IMPORTANTE:",
                 disclaimer_text_1: "Este sitio no es parte de Google™ o Meta Inc.",
@@ -356,8 +373,7 @@
                 modal_close_btn: "Cerrar",
                 footer_authorized_dist: "DISTRIBUIDOR AUTORIZADO",
                 free_delivery: "Envío Gratis",
-                guarantee_text: "60 Días de Garantía",
-                price_badge_text: "AHORA"
+                guarantee_text: "60 Días de Garantía"
             },
             de: {
                 seo_title: "Cystinorm™ | Natürliche Harnwegs- & Blasenunterstützung",
@@ -374,7 +390,7 @@
                 trust_2: "KLINISCH GEPRÜFT",
                 trust_3: "GMP-ZERTIFIZIERT",
                 trust_4: "EU-QUALITÄTSSTANDARDS",
-                footer_desc: "Wegweisende natürliche Lösungen. Sichere Nahrungsergänzungsmittel para mehr Lebensqualität.",
+                footer_desc: "Wegweisende natürliche Lösungen. Sichere Nahrungsergänzungsmittel für mehr Lebensqualität.",
                 footer_title_company: "UNTERNEHMEN",
                 footer_title_policies: "RICHTLINIEN",
                 footer_title_help: "HILFE",
@@ -385,19 +401,18 @@
                 link_contact: "Kontakt",
                 disclaimer_title: "WICHTIGER HINWEIS:",
                 disclaimer_text_1: "Diese Website ist kein Teil von Google™ oder Meta Inc.",
-                disclaimer_text_2: "CYSTINORM ist ein Nahrungsergänzungsmittel. Nicht para die Diagnose oder Behandlung von Krankheiten bestimmt.",
+                disclaimer_text_2: "CYSTINORM ist ein Nahrungsergänzungsmittel. Nicht für die Diagnose oder Behandlung von Krankheiten bestimmt.",
                 footer_rights: "Alle Rechte vorbehalten.",
                 modal_close_btn: "Schließen",
                 footer_authorized_dist: "AUTORISIERTER HÄNDLER",
                 free_delivery: "Gratis Versand",
-                guarantee_text: "60 Tage Garantie",
-                price_badge_text: "JETZT"
+                guarantee_text: "60 Tage Garantie"
             },
             it: {
                 seo_title: "Cystinorm™ | Sostegno Naturale per Vie Urinarie e Vescica",
                 badge_offer: "OFFERTA: SOLO 29€ OGGI",
                 h1_full: "Sostieni il tuo benessere urinario in modo naturale",
-                hero_desc: "CYSTINORM è una formula naturale studiata con cura per aiutare a sostenere la salute della vescica e favorire il comfort del tratto urinario.",
+                hero_desc: "CYSTINORM è uma formula naturale studiata com cura per aiutare a sostenere la salute della vescica e favorire il comfort del trato urinário.",
                 price_limited: "PREZZO LIMITATO",
                 select_country: "SCEGLI IL TUO PAESE:",
                 country_de: "Germania",
@@ -408,9 +423,9 @@
                 trust_2: "TEST CLINICI",
                 trust_3: "CERTIFICATO GMP",
                 trust_4: "STANDARD DI QUALITÀ UE",
-                footer_desc: "Soluzioni naturali all'avanguardia. Integratori sicuri para una migliore qualidade della vita.",
+                footer_desc: "Soluções naturais de ponta. Suplementos seguros para uma melhor qualidade de vida.",
                 footer_title_company: "AZIENDA",
-                footer_title_policies: "POLITICHE",
+                footer_title_policies: "POLÍTICAS",
                 footer_title_help: "SUPPORTO",
                 link_privacy: "Privacy",
                 link_terms: "Condizioni",
@@ -424,8 +439,7 @@
                 modal_close_btn: "Chiudi",
                 footer_authorized_dist: "DISTRIBUTORE AUTORIZZATO",
                 free_delivery: "Consegna Gratis",
-                guarantee_text: "60 Giorni di Garanzia",
-                price_badge_text: "ORA"
+                guarantee_text: "60 Giorni di Garanzia"
             }
         };
 
